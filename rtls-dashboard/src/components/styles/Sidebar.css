@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #29282d;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    padding: 12px 14px 0px 14px;
+    border-radius: 10px;
+}
+
+.link-item {
+    height: 5%;
+    width: 90%;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    margin: 20px auto 0px auto;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.1s ease;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.search-logo:hover {
+    color: black;
+}
+
+.active-link-item {
+    height: 5%;
+    width: 90%;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    margin: 20px auto 0px auto;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.1s ease;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #11101d;
+    background-color: #fff;
+}
+
+.active-link-item .link {
+    color: #11101d;
+}
+
+.link-item:hover {
+    width: 90%;
+    padding-left: 5px;
+    color: #11101d;
+    background-color: #fff;
+}
+
+.link-item:hover .link {
+    color: #11101d;
+}
+
+.search-box {
+    height: 5%;
+    width: 90%;
+    margin: 20px auto 0px auto;
+    border-radius: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    background-color: #272542;
+    text-decoration: none;
+}
+
+.search-field {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #272542;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.search-logo {
+    margin-left: 20px;
+}
+
+.link {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding-left: 14px;
+}
+
+.logo {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.notifications
+{
+    width: 95%;
+    height: 30%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    margin-top: auto;
+    margin-bottom: 20px;
+}

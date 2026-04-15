@@ -1,0 +1,15 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.barchart
+{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(#358ceb / 0.2);
+}

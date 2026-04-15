@@ -1,0 +1,723 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.edit-network
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.6fr 1.4fr;
+    grid-template-rows: 2fr 3fr;
+    grid-gap: 20px;
+}
+
+.edit-network-top
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.edit-network-info
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.edit-network-segments
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #1b1c24;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.edit-network-map
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+
+.edit-network-anchors
+{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #1b1c24;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.edit-anchors-title
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 177, 241);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.edit-anchors-content
+{
+    width: 100%;
+    height: 90%;
+}
+
+.network-segments-content
+{
+    width: 100%;
+    height: 90%;
+
+}
+.edit-anchors-list
+{
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+}
+
+.edit-tags-content
+{
+    width: 100%;
+    height: 90%;
+}
+
+.edit-tags-list
+{
+    width: 100%;
+    height: 75%;
+    margin-top: 5%;
+}
+
+.edit-network-tags
+{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #1b1c24;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.add-new-zone 
+{
+    width: 20%;
+    height: 10%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-zone-button
+{
+    width: 100%;
+    height: 100%;
+}
+
+.edit-tags-title
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(99, 177, 241);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.anchor-list-item
+{
+    width: 80%;
+    height: 8%;
+    margin: 20px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anchor-id
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-name
+{
+    height: 100%;
+    width: 25%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-x
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-y
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-z
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-initiator
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-list-item
+{
+    width: 80%;
+    height: 8%;
+    margin: 20px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag-id
+{
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-name
+{
+    height: 100%;
+    width: 25%;
+    font-size: 1.5rem;
+    background-color:#434450;
+    padding-left: 15px;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-size
+{
+    height: 100%;
+    width: 10%;
+    font-size: 1.5rem;
+    background-color:#434450;
+    padding-left: 15px;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.n-update-rate
+{
+    height: 100%;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-update-rate
+{
+    height: 100%;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-tag
+{
+    height: 100%;
+    width: 10%;
+    font-size: 1.5rem;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-tag-btn
+{
+    height: 80%;
+    width: 80%;
+    font-size: 1.3rem;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+.info-header
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1c24;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.info-header h2
+{
+    color: white;
+    font-size: 2rem;
+}
+
+.info-name
+{
+    width: 80%;
+    height: 10%;
+    margin: 5% auto 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+#info-name-label
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+#info-name-input
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+
+.info-network
+{
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+#info-network-label
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+#info-network-input
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+
+.info-floorplan-file
+{
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+#info-floorplan-label
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+#info-floorplan-input
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+
+.info-floorplan-x
+{
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+#info-floorplan-x-label
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+#info-floorplan-x-input
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+
+.info-floorplan-y
+{
+    width: 80%;
+    height: 10%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+#info-floorplan-y-label
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+#info-floorplan-y-input
+{
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+
+.info-update
+{
+    width: 20%;
+    height: 10%;
+    margin: 5% auto 0px;
+}
+
+.info-update-btn
+{
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    font-size: 1.5rem;
+}
+
+.network-map-0x0RT6
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/floorplan.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.network-map-0x1BBA
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/warehouse.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.network-map-0x0499
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/Room4.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.network-segments-title
+{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.network-segments-title h2
+{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 2rem;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.network-segments-list
+{
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+}
+
+.segment-list-item
+{
+    width: 85%;
+    height: 15%;
+    margin: 20px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.segment-name
+{
+    height: 100%;
+    width: 28%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-x
+{
+    height: 100%;
+    width: 10%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-y
+{
+    height: 100%;
+    width: 10%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-width
+{
+    height: 100%;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment-height
+{
+    height: 100%;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-segment
+{
+    height: 100%;
+    width: 12%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-segment-btn
+{
+    height: 90%;
+    width: 90%;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+.segment-list-new
+{
+    width: 25%;
+    height: 12%;
+    margin: 30px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-segment-button
+{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(100, 224, 100);
+    border-radius: 10px;
+}

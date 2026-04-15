@@ -1,0 +1,122 @@
+.add-zone
+{
+    width: 60%;
+    height: 80%;
+    margin: 5% auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.add-zone-header
+{
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-zone-header h1
+{
+    font-size: 2rem;
+}
+
+.add-zone-map-0x0RT6
+{
+    width: 100%;
+    height: 85%;
+    background-image: url("/public/floorplan.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.add-zone-map-0x1BBA
+{
+    width: 100%;
+    height: 85%;
+    background-image: url("/public/warehouse.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.add-zone-map-0x0499
+{
+    width: 100%;
+    height: 85%;
+    background-image: url("/public/Room4.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.add-zone-details
+{
+    width: 100%;
+    height: 5%;
+    background-color: #434450;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-zone-details-2
+{
+    width: 100%;
+    height: 5%;
+    background-color: #434450;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.add-zone-item
+{
+    height: 100%;
+    width: 6%;
+    background-color: #434450;
+    padding-left: 12px;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-zone-label
+{
+    height: 100%;
+    width: 7%;
+    background-color: #434450;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zone-name-input
+{
+    height: 100%;
+    width: 20%;
+    background-color: #434450;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-zone-btn
+{
+    height: 100%;
+    width: 10%;
+    background-color: #2d7c2a;
+    font-size: 1.3rem;
+    color: white;
+}

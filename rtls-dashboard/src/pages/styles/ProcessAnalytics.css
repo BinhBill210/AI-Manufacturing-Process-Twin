@@ -1,0 +1,254 @@
+/* Root layout for ProcessAnalytics */
+.process-analytics {
+    width: 100%;
+    height: 99%;
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.8fr 3.2fr;
+    grid-template-rows: 1fr 15fr;
+    grid-gap: 20px;
+}
+
+/* Title row */
+.process-analytics-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process-analytics-title-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.process-analytics h1 {
+    margin: auto;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.process-analytics p {
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+/* LEFT PANEL: selector container */
+.process-analytics-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1b1c24;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.2);
+    overflow: hidden;
+    min-width: 0;
+}
+
+/* Left panel header */
+.process-analytics-selector-title {
+    background-color: #105fad;
+    height: 5%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-analytics-selector-title h2 {
+    color: black;
+}
+
+/* Tag list: shorter, scrollable */
+.process-analytics-tag-list {
+    display: grid;
+    height: 30%;
+    max-height: 30%;
+    padding: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(44px, auto);
+    gap: 12px;
+    overflow: auto;
+}
+
+/* Time frame section */
+.process-analytics-time-selector {
+    height: 64%;
+    background-color: #1b1c24;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.process-analytics-time-title {
+    width: 100%;
+    height: 10%;
+    background-color: #105fad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-analytics-time-title h2 {
+    color: black;
+}
+
+/* Stack time controls, legend, JSON vertically */
+.process-analytics-time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px 20px;
+    height: auto;
+}
+
+/* Time-range box inside time list */
+.process-time-range-selector {
+    padding: 14px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.process-time-range-selector label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.process-time-range-selector input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.process-time-range-selector button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.process-time-range-selector button:hover {
+    background-color: #0056b3;
+}
+
+/* Tag “cards” */
+.process-history-form-element {
+    width: 100%;
+    height: 100%;
+    background-color: #434450;
+    display: flex;
+    align-items: center;
+}
+
+.process-history-form-element-active {
+    width: 100%;
+    height: 100%;
+    background-color: #105fad;
+    display: flex;
+    align-items: center;
+}
+
+.process-history-form-element:hover {
+    background-color: #434450;
+    border: 5px solid #105fad;
+}
+
+/* Checkbox label inside tag card */
+.process-checkbox-label {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8px;
+}
+
+.process-checkbox-label p {
+    color: white;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Analytics “Show on map” panel (replaces JSON) */
+.process-analytics-visibility-panel {
+    background: #111;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.process-analytics-visibility-title {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.process-analytics-visibility-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 180px;
+    overflow: auto;
+    padding-right: 6px;
+}
+
+.process-analytics-visibility-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+    user-select: none;
+}
+
+.process-analytics-visibility-row:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.process-analytics-visibility-name {
+    color: white;
+    font-weight: 600;
+}
+
+.process-analytics-visibility-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.process-analytics-visibility-actions button {
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.10);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.process-analytics-visibility-actions button:hover {
+    background: rgba(255, 255, 255, 0.16);
+}

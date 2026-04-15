@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d24f6b9b.css",
+    "main.js": "/static/js/main.763757b2.js",
+    "static/media/floorplan.png": "/static/media/floorplan.ccc032edef119036292f.png",
+    "static/media/warehouse.PNG": "/static/media/warehouse.019ef3f381121c26b825.PNG",
+    "static/media/Room4.PNG": "/static/media/Room4.007c3163c102ba2d0066.PNG",
+    "index.html": "/index.html",
+    "main.d24f6b9b.css.map": "/static/css/main.d24f6b9b.css.map",
+    "main.763757b2.js.map": "/static/js/main.763757b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d24f6b9b.css",
+    "static/js/main.763757b2.js"
+  ]
+}

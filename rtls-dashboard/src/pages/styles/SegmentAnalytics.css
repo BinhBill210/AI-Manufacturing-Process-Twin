@@ -1,0 +1,693 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.segment-analytics
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.segment-selector
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: #1b1c24;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.2);
+}
+
+.segment-selector-title
+{
+    background-color: #c05e3d;
+    height: 5%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segment-analytics-right
+{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    background-color: rgb(93, 124, 131);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.segment-analytics-title
+{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.segment-analytics-content
+{
+    width: 100%;
+    height: 94%;
+    display: grid;
+    padding: 40px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr ;
+    grid-gap: 20px 40px;
+}
+
+.segment-tag-list
+{
+    display: grid;
+    height: 80%;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.segment-form-element
+{
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    background-color: #434450;
+} 
+
+.segment-form-element-active
+{
+    width: 100%;
+    height: 100%;
+    background-color: #c05e3d;
+} 
+
+.segment-form-element:hover
+{
+    width: 100%;
+    height: 100%;
+    background-color: #434450;
+    border: 4px solid #c05e3d;
+} 
+
+.segment-checkbox-label
+{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.segment-checkbox-label .checkbox-logo
+{
+    color: white;
+}
+
+.segment-checkbox-label p
+{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.segment-taglocation-checkbox
+{
+    display: none;
+}
+
+input[type="checkbox"]:checked + .check-box-after {
+    background-color: red !important;
+    transform: scale(1.25);
+  }
+
+
+.edit-segments-map
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.segment-map
+{
+    width: 96%;
+    height: 96%;
+    background-image: url("/public/floorplan.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.info-table
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.segment-activity
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-activity-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.segment-activity-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.segment-activity-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.segment-activity-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+
+
+
+
+.segment-activity2
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-activity-chart2
+{
+    background-color: #15d13e;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.segment-activity-info2
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.segment-activity-info2 h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.segment-activity-info2 p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+
+
+
+
+.segment-tags
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-tags-chart
+{
+    background-color: #d8811d;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.segment-tags-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.segment-tags-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.segment-tags-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+
+
+
+
+
+.view-segment-content
+{
+    width: 100%;
+    height: 94%;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+}
+
+.segment-timespent
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-timespent-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.segment-timespent-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.segment-timespent-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.segment-timespent-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+.segment-weekly
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.segment-weekly-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.segment-weekly-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.segment-weekly-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.segment-weekly-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+
+.view-tag-content
+{
+    width: 100%;
+    height: 94%;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr ;
+    grid-gap: 20px;
+}
+
+.tag-segment-timespent
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-segment-timespent-chart
+{
+    background-color: #2f992e;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.tag-segment-timespent-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.tag-segment-timespent-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.tag-segment-timespent-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+.tag-printing-timespent
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-printing-timespent-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.tag-printing-timespent-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.tag-printing-timespent-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.tag-printing-timespent-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+
+.tag-dome-timespent
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-dome-timespent-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.tag-dome-timespent-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.tag-dome-timespent-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.tag-dome-timespent-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}
+
+.tag-design-timespent
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-design-timespent-chart
+{
+    background-color: #565fb6;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: -20%;
+    height: 90%;
+    padding: 10px;
+}
+
+.tag-design-timespent-info
+{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 76%;
+    height: 20%;
+}
+
+.tag-design-timespent-info h4
+{
+    font-size: 1.4rem;
+    color: rgb(77, 77, 77)
+}
+
+.tag-design-timespent-info p
+{
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+    margin-top: 8px;
+}

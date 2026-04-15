@@ -1,0 +1,31 @@
+.topbar-container
+{
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+
+.location-picker
+{
+    width: 13%;
+    height: 80%;
+    margin-right: 2%;
+    margin-top: 12px;
+}
+
+select 
+{
+    width: 100%;
+    height: 100%;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background-color: rgb(216, 224, 250);;
+    flex: 1;
+    padding: 0 .5em;
+    cursor:pointer;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+ }

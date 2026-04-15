@@ -1,0 +1,10 @@
+.canvas-container-rect {
+    border: 1px solid #000;
+    cursor: crosshair;
+
+}
+
+.rectangle {
+    stroke: red; /* Change the stroke color of the rectangle */
+    fill: blue; /* Change the fill color of the rectangle */
+}

@@ -1,0 +1,94 @@
+
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1vh;
+}
+
+.app-grid
+{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 24fr;
+    background-color: rgb(216, 224, 250);
+}
+
+.sidebar 
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 15px;
+}
+
+.content 
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.form-element
+{
+    width: 100%;
+    height: 100%;
+    background-color: #434450;
+} 
+
+.form-element-active
+{
+    width: 100%;
+    height: 100%;
+    background-color: #c05e3d;
+} 
+
+.form-element:hover
+{
+    width: 100%;
+    height: 100%;
+    background-color: #434450;
+    border: 5px solid #c05e3d;
+} 
+
+.checkbox-label
+{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-label p
+{
+    width: 100%;
+    height: 40%;
+    user-select: none;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-label .checkbox-logo
+{
+    color: white;
+}
+
+.icon
+{
+    width: 30%;
+    height: 40%;
+}

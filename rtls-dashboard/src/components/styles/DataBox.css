@@ -1,0 +1,140 @@
+.databox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo-box-person {
+    background-color: rgb(18, 161, 18);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    height: 32%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.databox-title {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo-box-equipment {
+    background-color: rgb(109, 109, 249);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    height: 32%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo-box-entries {
+    background-color: rgb(250, 250, 98);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    height: 32%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo-box-issues {
+    background-color: rgb(243, 57, 57);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    height: 32%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.databox-logo {
+    height: 60%;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.databox-content {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+}
+
+.today-field {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-right: 1px solid grey
+}
+
+.today-field h2 {
+    font-size: 1.5rem;
+    color: rgb(75, 74, 74);
+    font-style: bold;
+    margin-top: 25px;
+}
+
+.today-field p {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+}
+
+.week-field {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.week-field h2 {
+    font-size: 1.5rem;
+    color: rgb(75, 74, 74);
+    font-style: bold;
+    margin-top: 25px;
+}
+
+.week-field p {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+}

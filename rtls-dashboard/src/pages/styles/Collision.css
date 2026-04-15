@@ -1,0 +1,312 @@
+/* src/styles/Collision.css */
+/* IMPORTANT: no global *, no global Toastify rules here.
+   Everything is scoped to collision-specific classes. */
+
+.collision--dashboard {
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr 3fr 3fr;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/* Top row: title + slider box */
+.collision--boxes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collision-name-box {
+    margin-bottom: auto;
+}
+
+.collision-name-box-header {
+    font-size: 15px;
+}
+
+.collision-name-box-description {
+    font-size: 10px;
+}
+
+/* Slider box */
+.collision-range-box {
+    font-family: 'sans-serif';
+    background-color: white;
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+}
+
+.collision-range-box-header {
+    font-size: 15px;
+}
+
+.collision-range-box-paragraph {
+    font-size: 10px;
+}
+
+.collision-span--element {
+    display: flex;
+    gap: 10px;
+}
+
+/* Slider styling (scoped) */
+.collision-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.collision-slider:hover {
+    opacity: 1;
+}
+
+.collision-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.collision-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+/* Map box */
+.collision-map-box {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+}
+
+.collision-map-title {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collision-map-title h2 {
+    color: black;
+    font-size: 2rem;
+}
+
+/* Base map container */
+.collision-map {
+    width: 100%;
+    height: 95%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.collision-map-amdc {
+    background-image: url("/public/FoF-floorplan.png");
+}
+
+.collision-map-warehouse {
+    background-image: url("/public/warehouse.PNG");
+}
+
+.collision-map-room {
+    background-image: url("/public/Room4.PNG");
+}
+
+/* Collision canvas (unique id, no clash with dashboard) */
+#collision-map-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heatmap card */
+.collision-heat {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.3);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.collision-heat-map-chart {
+    position: relative;
+    width: 100%;
+}
+
+.collision-heatmap-header {
+    font-size: 15px;
+}
+
+.collision-heatmap--info {
+    margin-top: auto;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+/* Obstacles panel */
+.collision--obstacles {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #1b1c24;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+/* Obstacles list items */
+.collision-obstacle-list-item {
+    width: 95%;
+    height: 15%;
+    margin: 20px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.collision-obstacle-name {
+    height: 100%;
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collision-obstacle-x,
+.collision-obstacle-y,
+.collision-obstacle-width,
+.collision-obstacle-height {
+    height: 100%;
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collision-obstacle-width,
+.collision-obstacle-height {
+    width: 20%;
+}
+
+.collision-delete-obstacle {
+    height: 100%;
+    width: 12%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collision-delete-obstacle-btn {
+    padding: 10%;
+    font-size: 1.45rem;
+    background-color: white;
+    color: #434450;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Add new obstacle button */
+.collision-obstacle-list-new {
+    width: 25%;
+    height: 12%;
+    margin: 30px auto;
+    background-color: #434450;
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.collision-new-obstacle-button {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(228, 105, 39);
+    border-radius: 10px;
+}
+
+/* Obstacles panel heading */
+.collision-obstacle-segments-content {
+    width: 100%;
+    height: 90%;
+}
+
+.collision-obstacle-segments-list {
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+}
+
+.collision-obstacle-segments-title {
+    width: 100%;
+    height: 15%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(255, 47, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collision-obstacle-segments-heading {
+    font-size: 16px;
+}
